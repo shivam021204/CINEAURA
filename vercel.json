@@ -1,19 +1,14 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**/*.html", "use": "@vercel/static" },
-    { "src": "**/*.css", "use": "@vercel/static" },
-    { "src": "**/*.js", "use": "@vercel/static" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "top-actors.html", "use": "@vercel/static" },
+    { "src": "imdb.html", "use": "@vercel/static" },
+    { "src": "top-actresses.html", "use": "@vercel/static" },
+    { "src": "trending.html", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" },
+    { "src": "script.js", "use": "@vercel/static" },
     { "src": "images/**/*", "use": "@vercel/static" },
-    { "src": "video/**/*", "use": "@vercel/static" },
-    { "src": "public/**/*", "use": "@vercel/static" }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+    { "src": "video/**/*", "use": "@vercel/static" }
+  ]
 }
