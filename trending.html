@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Trending Movies - MovieHub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #111 0%, #484747 50%, #111 100%);
+      background-attachment: fixed;
+      color: #f0f0f0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4em;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin: 40px 0;
+      background: linear-gradient(135deg, #ffffff 0%, #f8b400 50%, #ffffff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 10px rgba(248, 180, 0, 0.2); }
+      100% { text-shadow: 0 0 20px rgba(248, 180, 0, 0.4); }
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #f8b400;
+      margin: 20px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .movie-list {
+      list-style: none;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    .movie-card {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #ffffff;
+      padding: 20px;
+      position: relative;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-2px);
+      background: rgba(248, 180, 0, 0.1);
+      border-color: rgba(248, 180, 0, 0.3);
+    }
+
+    .movie-info {
+      text-align: left;
+    }
+
+    .movie-title {
+      font-size: 1.2em;
+      color: #f8b400;
+    }
+
+    .movie-details {
+      font-size: 0.8em;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    .imdb-rating {
+      background: #f3ce13;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .trending-tag {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ff4757;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.7em;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    a {
+      color: #f8b400;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin: 30px 0;
+      padding: 12px 25px;
+      border-radius: 8px;
+      background: rgba(248, 180, 0, 0.1);
+      border: 1px solid rgba(248, 180, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: rgba(248, 180, 0, 0.2);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Trending Now</h1>
+  <p>Currently trending movies with their IMDb ratings</p>
+
+  <ul class="movie-list">
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Oppenheimer (2023)</div>
+        <div class="movie-details">Director: Christopher Nolan | Drama, Biography</div>
+      </div>
+      <div class="imdb-rating">8.9</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Barbie (2023)</div>
+        <div class="movie-details">Director: Greta Gerwig | Comedy, Adventure</div>
+      </div>
+      <div class="imdb-rating">7.5</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Killers of the Flower Moon (2023)</div>
+        <div class="movie-details">Director: Martin Scorsese | Crime, Drama</div>
+      </div>
+      <div class="imdb-rating">8.7</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Napoleon (2023)</div>
+        <div class="movie-details">Director: Ridley Scott | Biography, Action</div>
+      </div>
+      <div class="imdb-rating">8.2</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">The Killer (2023)</div>
+        <div class="movie-details">Director: David Fincher | Action, Crime</div>
+      </div>
+      <div class="imdb-rating">7.9</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Blue Beetle (2023)</div>
+        <div class="movie-details">Director: Angel Manuel Soto | Action, Adventure</div>
+      </div>
+      <div class="imdb-rating">7.2</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">The Marvels (2023)</div>
+        <div class="movie-details">Director: Nia DaCosta | Action, Adventure</div>
+      </div>
+      <div class="imdb-rating">7.0</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Dune: Part Two (2024)</div>
+        <div class="movie-details">Director: Denis Villeneuve | Sci-Fi, Adventure</div>
+      </div>
+      <div class="imdb-rating">8.8</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Five Nights at Freddy's (2023)</div>
+        <div class="movie-details">Director: Emma Tammi | Horror, Mystery</div>
+      </div>
+      <div class="imdb-rating">7.1</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+    <li class="movie-card">
+      <div class="movie-info">
+        <div class="movie-title">Wonka (2023)</div>
+        <div class="movie-details">Director: Paul King | Adventure, Family</div>
+      </div>
+      <div class="imdb-rating">8.0</div>
+      <span class="trending-tag">🔥 Hot</span>
+    </li>
+  </ul>
+
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

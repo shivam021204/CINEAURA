@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineAura</title>
+  <link rel="icon" href="images/symbol.jpg" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 🌙 THEME TOGGLE -->
+  <div class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark theme">
+    <span id="themeIcon">🌙</span>
+    <span id="themeLabel" class="theme-label">Dark</span>
+  </div>
+
+  <!-- ⋮ SIDEBAR MENU ICON -->
+  <div class="menu-container">
+    <div class="menu-icon" title="Open Menu" onclick="toggleMenu()">⋮</div>
+  </div>
+
+  <!-- 📜 SIDE MENU -->
+  <nav class="side-menu" id="sideMenu">
+    <ul class="ule">
+      <li><a href="top-actors.html">Top Actors</a></li>
+      <li><a href="imdb.html">Top IMDb</a></li>
+      <li><a href="top-actresses.html">Top Actresses</a></li>
+      <li><a href="trending.html">Currently Trending</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔲 OVERLAY (background dim) -->
+  <div id="overlay" onclick="closePopup()"></div>
+
+  <!-- 🌆 MAIN CONTENT -->
+  <main class="main-content">
+    <div class="content">
+      <!-- ✨ HEADING BOX -->
+      <div class="heading-box">
+        <h1>C!NEAURA</h1>
+      </div>
+
+      <!-- 🔍 SEARCH BOX -->
+      <div style="margin-top: 80px;margin-bottom:50px;">
+        <input 
+          type="text" 
+          id="search"
+          placeholder="Search movies..."
+          title="Type a movie name and press Enter">
+      </div>
+
+      <!-- 🎬 GENRES SECTION -->
+      <span id="omega" class="choose-genre-btn" onclick="openPopup()"><span>Choose Genre :</span></span>
+      <section class="genres-container">
+        <button class="scroll-btn left">&#10094;</button>
+        <div class="genres" id="genresScroll">
+          <a href="comedy.html" class="genre-box"><div class="genre-box-inner"><img src="images/comedy.jpeg" alt="Comedy"><span class="genre-name">Comedy</span></div></a>
+          <a href="suspense.html" class="genre-box"><div class="genre-box-inner"><img src="images/suspense.jpeg" alt="Suspense"><span class="genre-name">Thriller</span></div></a>
+          <a href="romance.html" class="genre-box"><div class="genre-box-inner"><img src="images/romance.jpeg" alt="Romance"><span class="genre-name">Romance</span></div></a>
+          <a href="action.html" class="genre-box"><div class="genre-box-inner"><img src="images/action.jpeg" alt="Action"><span class="genre-name">Action</span></div></a>
+          <a href="horror.html" class="genre-box"><div class="genre-box-inner"><img src="images/horror.jpeg" alt="Horror"><span class="genre-name">Horror</span></div></a>
+          <a href="anime.html" class="genre-box"><div class="genre-box-inner"><img src="images/anime.jpeg" alt="Anime"><span class="genre-name">Anime</span></div></a>
+          <a href="drama.html" class="genre-box"><div class="genre-box-inner"><img src="images/drama.jpg" alt="Drama"><span class="genre-name">Drama</span></div></a>
+          <a href="documentary.html" class="genre-box"><div class="genre-box-inner"><img src="images/documentary.jpeg" alt="Documentary"><span class="genre-name">Documentary</span></div></a>
+          <a href="fantasy.html" class="genre-box"><div class="genre-box-inner"><img src="images/fantasy.jpeg" alt="Fantasy"><span class="genre-name">Fantasy</span></div></a>
+        </div>
+        <button class="scroll-btn right">&#10095;</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- 💬 POPUP BOX -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Choose Genre</h2>
+      <p>Select your favorite movie category to explore.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- 🔍 SEARCH RESULT POPUP -->
+  <div class="search-popup" id="searchPopup">
+    <div class="search-popup-content">
+      <h2>Movie Not Found</h2>
+      <p>Sorry, we couldn't find this movie in our collection.</p>
+      <button onclick="closeSearchPopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
