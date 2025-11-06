@@ -13,7 +13,7 @@ body {
 .heading-box {
   margin-top: 30px;
 
-  
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   
 }
 
@@ -193,9 +193,7 @@ body.light-theme .search-popup-content p {
 
 /*  CHOOSE GENRE TEXT  */
 .choose-genre-btn {
-
-  
-  display:block;
+  display: block;
   font-size: 1.8em;
   font-weight: 800;
   color: #0e0d0d;
@@ -203,7 +201,7 @@ body.light-theme .search-popup-content p {
   transition: all 0.2s ease;
   text-decoration: none;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
-  position:relative ;
+  position: relative;
   z-index: 1400;
   pointer-events: auto;
   text-align: left;
@@ -214,9 +212,6 @@ body.light-theme .search-popup-content p {
   margin-bottom: 5px;
   margin-top: 30px;
 }
-
-
-
 
 .choose-genre-btn span {
   position: relative;
@@ -491,7 +486,6 @@ body.menu-open .main-content {
   pointer-events: none;
   user-select: none;
   transition: filter 0.3s ease;
-  
 }
 
 /* ---------- GENRES SECTION ---------- */
@@ -505,7 +499,6 @@ body.menu-open .main-content {
   justify-content: center;
   overflow: visible;
   padding-top: 0;
-   
 }
 
 .genres {
@@ -522,13 +515,6 @@ body.menu-open .main-content {
   width: calc(100% - 120px);
   max-width: 1400px;
   -webkit-overflow-scrolling: touch;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  width: 100%;
-  max-width: 1400px;
 }
 
 .genres::-webkit-scrollbar {
@@ -559,58 +545,6 @@ body.menu-open .main-content {
   transform-origin: center center;
 }
 
-/* ======= For tablets and below ======= */
-@media screen and (max-width: 1024px) {
-  .choose-genre-btn {
-    width: 95%;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 1.6em;
-  }
-
-  .genres {
-    padding: 20px;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .genre-box {
-    width: 260px;
-    height: auto;
-  }
-}
-
-/* ======= For mobile devices ======= */
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden; /* Prevent side scroll */
-  }
-
-  .choose-genre-btn {
-    width: 100%;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 1.4em;
-  }
-
-  .genres {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-
-  .genre-box {
-    width: 90%;
-    transform: none;
-  }
-
-  .scroll-btn {
-    display: none;
-  }
-}
-
 .genre-box:hover {
   transform: scale(1.35);
   z-index: 10;
@@ -621,13 +555,11 @@ body.menu-open .main-content {
 }
 
 .genre-box img {
-  display: block; /* ensures no inline spacing issues */
   width: 320px;
   height: 230px;
-  border-radius: 0%;
+  border-radius:0%;
   border: 2px solid rgba(37, 36, 36, 0.1);
   transition: box-shadow 0.3s ease;
-  margin: 0 auto; /* centers under the button */
 }
 
 .genre-box:hover img {
