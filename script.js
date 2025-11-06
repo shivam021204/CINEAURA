@@ -175,7 +175,107 @@ const movieDatabase = {
     "the marvels": "trending.html",
     "dune: part two": "trending.html",
     "five nights at freddy's": "trending.html",
-    "wonka": "trending.html"
+    "wonka": "trending.html",
+
+     // 💥 Action
+    "mad max: fury road": "action.html",
+    "john wick": "action.html",
+    "die hard": "action.html",
+    "mission impossible": "action.html",
+    "the dark knight": "action.html",
+    "gladiator": "action.html",
+    "terminator": "action.html",
+    "extraction": "action.html",
+    "the matrix": "action.html",
+    "avengers": "action.html",
+
+
+  // ❤️ Romance
+  "the notebook": "romance.html",
+    "pride and prejudice": "romance.html",
+    "titanic": "romance.html",
+    "la la land": "romance.html",
+    "a walk to remember": "romance.html",
+    "me before you": "romance.html",
+    "crazy rich asians": "romance.html",
+    "notting hill": "romance.html",
+    "the fault in our stars": "romance.html",
+    "dear john": "romance.html",
+
+  // 😱 Horror
+   "the exorcist": "horror.html",
+    "a quiet place": "horror.html",
+    "the conjuring": "horror.html",
+    "get out": "horror.html",
+    "the shining": "horror.html",
+    "hereditary": "horror.html",
+    "the babadook": "horror.html",
+    "it follows": "horror.html",
+    "sinister": "horror.html",
+    "the thing": "horror.html",
+
+  // 🧙 Fantasy
+  "harry potter": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  "lord of the rings": "fantasy.html",
+  
+
+  // 🎬 Anime
+   "spirited away": "anime.html",
+    "your name": "anime.html",
+    "princess mononoke": "anime.html",
+    "akira": "anime.html",
+    "my neighbor totoro": "anime.html",
+    "howl's moving castle": "anime.html",
+    "demon slayer: mugen train": "anime.html",
+    "perfect blue": "anime.html",
+    "ghost in the shell": "anime.html",
+    "grave of the fireflies": "anime.html",
+
+
+  // 🎭 Drama
+  "the shawshank redemption": "drama.html",
+    "forrest gump": "drama.html",
+    "the green mile": "drama.html",
+    "schindler's list": "drama.html",
+    "the godfather": "drama.html",
+    "the pursuit of happyness": "drama.html",
+    "a beautiful mind": "drama.html",
+    "good will hunting": "drama.html",
+    "the theory of everything": "drama.html",
+    "dead poets society": "drama.html",
+
+
+  // 📽️ Documentary
+  "planet earth ii": "documentary.html",
+    "my octopus teacher": "documentary.html",
+    "free solo": "documentary.html",
+    "march of the penguins": "documentary.html",
+    "the social dilemma": "documentary.html",
+    "blackfish": "documentary.html",
+    "bowling for columbine": "documentary.html",
+    "the last dance": "documentary.html",
+    "food inc.": "documentary.html",
+    "inside job": "documentary.html",
+
+  //thriller
+  "se7en": "suspense.html",
+    "shutter island": "suspense.html",
+    "gone girl": "suspense.html",
+    "the sixth sense": "suspense.html",
+    "prisoners": "suspense.html",
+    "memento": "suspense.html",
+    "fight club": "suspense.html",
+    "nightcrawler": "suspense.html",
+    "rear window": "suspense.html",
+    "the others": "suspense.html",
 };
 
 // Initialize search functionality
